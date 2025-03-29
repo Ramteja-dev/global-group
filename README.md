@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Users List with Pagination
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This React application fetches and displays a list of users from the ReqRes API with pagination and user deletion functionality. The UI is built using Radix UI components for a modern and interactive design.
 
-## Available Scripts
+## Features
+- Fetches user data from `https://reqres.in/api/users`
+- Displays user information in a table format
+- Supports pagination with "Previous" and "Next" buttons
+- Allows users to be deleted from the list with a confirmation dialog
 
-In the project directory, you can run:
+## Technologies Used
+- React
+- Axios (for API requests)
+- Radix UI (for UI components)
 
-### `npm start`
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/users-list-pagination.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd users-list-pagination
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+1. Start the application:
+   ```sh
+   npm start
+   ```
+2. The application will open in your browser at `http://localhost:3000`.
+3. Navigate through the user list using pagination buttons.
+4. Click the "Delete" button to remove a user (with a confirmation prompt).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+index.js (Renders the application)
+```
 
-### `npm test`
+## API Details
+- `GET https://reqres.in/api/users?page={page}` - Fetches user data for the given page.
+- `DELETE https://reqres.in/api/users/{id}` - Simulates user deletion.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Pull requests are welcome! Please follow the standard guidelines:
+- Fork the repository
+- Create a new branch (`feature-xyz`)
+- Commit your changes
+- Push the branch and submit a PR
